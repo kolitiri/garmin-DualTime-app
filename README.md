@@ -22,10 +22,10 @@ Check the manifest.xml for a list of the supported devices.
 Please note, this has only been tested on a real Fenix6 Pro device. The rest of the devices have only been tested through the simulator.
 
 ### Useful links
-https://developer.garmin.com/connect-iq/api-docs/index.html
-https://developer.garmin.com/connect-iq/core-topics/layouts/
-https://developer.garmin.com/connect-iq/submit-an-app/
-https://developer.garmin.com/connect-iq/compatible-devices/
+* [API Documentation](https://developer.garmin.com/connect-iq/api-docs/index.html)
+* [Core topics](https://developer.garmin.com/connect-iq/core-topics/layouts/)
+* [App submission](https://developer.garmin.com/connect-iq/submit-an-app/)
+* [Device compatibility](https://developer.garmin.com/connect-iq/compatible-devices/)
 
 ### Notes
 
@@ -33,4 +33,4 @@ Uses Time.localMoment [since API Level 3.3.0]
 
 ### Authors
 
-Chris Liontos
+Christos Liontos
