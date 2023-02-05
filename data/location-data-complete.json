@@ -1,0 +1,1142 @@
+{
+    "Afghanistan": {
+        "timezoneCode": "AF",
+        "latitude": 34.5167,
+        "longtitude": 69.1833
+    },
+    "Albania": {
+        "timezoneCode": "AL",
+        "latitude": 41.3167,
+        "longtitude": 19.8167
+    },
+    "Algeria": {
+        "timezoneCode": "DZ",
+        "latitude": 36.75,
+        "longtitude": 3.05
+    },
+    "American Samoa": {
+        "timezoneCode": "AS",
+        "latitude": -14.2667,
+        "longtitude": -170.7
+    },
+    "Andorra": {
+        "timezoneCode": "AD",
+        "latitude": 42.5,
+        "longtitude": 1.5167
+    },
+    "Angola": {
+        "timezoneCode": "AO",
+        "latitude": -8.8333,
+        "longtitude": 13.2167
+    },
+    "Anguilla": {
+        "timezoneCode": "AI",
+        "latitude": 18.2167,
+        "longtitude": -63.05
+    },
+    "Antigua and Barbuda": {
+        "timezoneCode": "AG",
+        "latitude": 17.1167,
+        "longtitude": -61.85
+    },
+    "Argentina": {
+        "timezoneCode": "AR",
+        "latitude": -34.5833,
+        "longtitude": -58.6667
+    },
+    "Armenia": {
+        "timezoneCode": "AM",
+        "latitude": 40.1667,
+        "longtitude": 44.5
+    },
+    "Aruba": {
+        "timezoneCode": "AW",
+        "latitude": 12.5167,
+        "longtitude": -70.0333
+    },
+    "Australia": {
+        "timezoneCode": "AU",
+        "latitude": -35.2667,
+        "longtitude": 149.1333
+    },
+    "Austria": {
+        "timezoneCode": "AT",
+        "latitude": 48.2,
+        "longtitude": 16.3667
+    },
+    "Azerbaijan": {
+        "timezoneCode": "AZ",
+        "latitude": 40.3833,
+        "longtitude": 49.8667
+    },
+    "Bahamas": {
+        "timezoneCode": "BS",
+        "latitude": 25.0833,
+        "longtitude": -77.35
+    },
+    "Bahrain": {
+        "timezoneCode": "BH",
+        "latitude": 26.2333,
+        "longtitude": 50.5667
+    },
+    "Bangladesh": {
+        "timezoneCode": "BD",
+        "latitude": 23.7167,
+        "longtitude": 90.4
+    },
+    "Barbados": {
+        "timezoneCode": "BB",
+        "latitude": 13.1,
+        "longtitude": -59.6167
+    },
+    "Belarus": {
+        "timezoneCode": "BY",
+        "latitude": 53.9,
+        "longtitude": 27.5667
+    },
+    "Belgium": {
+        "timezoneCode": "BE",
+        "latitude": 50.8333,
+        "longtitude": 4.3333
+    },
+    "Belize": {
+        "timezoneCode": "BZ",
+        "latitude": 17.25,
+        "longtitude": -88.7667
+    },
+    "Benin": {
+        "timezoneCode": "BJ",
+        "latitude": 6.4833,
+        "longtitude": 2.6167
+    },
+    "Bermuda": {
+        "timezoneCode": "BM",
+        "latitude": 32.2833,
+        "longtitude": -64.7833
+    },
+    "Bhutan": {
+        "timezoneCode": "BT",
+        "latitude": 27.4667,
+        "longtitude": 89.6333
+    },
+    "Bolivia": {
+        "timezoneCode": "BO",
+        "latitude": -16.5,
+        "longtitude": -68.15
+    },
+    "Bosnia and Herzegovina": {
+        "timezoneCode": "BA",
+        "latitude": 43.8667,
+        "longtitude": 18.4167
+    },
+    "Botswana": {
+        "timezoneCode": "BW",
+        "latitude": -24.6333,
+        "longtitude": 25.9
+    },
+    "Brazil": {
+        "timezoneCode": "BR",
+        "latitude": -15.7833,
+        "longtitude": -47.9167
+    },
+    "British Virgin Islands": {
+        "timezoneCode": "VG",
+        "latitude": 18.4167,
+        "longtitude": -64.6167
+    },
+    "Bulgaria": {
+        "timezoneCode": "BG",
+        "latitude": 42.6833,
+        "longtitude": 23.3167
+    },
+    "Burkina Faso": {
+        "timezoneCode": "BF",
+        "latitude": 12.3667,
+        "longtitude": -1.5167
+    },
+    "Myanmar": {
+        "timezoneCode": "MM",
+        "latitude": 16.8,
+        "longtitude": 96.15
+    },
+    "Burundi": {
+        "timezoneCode": "BI",
+        "latitude": -3.3667,
+        "longtitude": 29.35
+    },
+    "Cambodia": {
+        "timezoneCode": "KH",
+        "latitude": 11.55,
+        "longtitude": 104.9167
+    },
+    "Cameroon": {
+        "timezoneCode": "CM",
+        "latitude": 3.8667,
+        "longtitude": 11.5167
+    },
+    "Canada": {
+        "timezoneCode": "CA",
+        "latitude": 45.4167,
+        "longtitude": -75.7
+    },
+    "Cape Verde": {
+        "timezoneCode": "CV",
+        "latitude": 14.9167,
+        "longtitude": -23.5167
+    },
+    "Cayman Islands": {
+        "timezoneCode": "KY",
+        "latitude": 19.3,
+        "longtitude": -81.3833
+    },
+    "Central African Republic": {
+        "timezoneCode": "CF",
+        "latitude": 4.3667,
+        "longtitude": 18.5833
+    },
+    "Chad": {
+        "timezoneCode": "TD",
+        "latitude": 12.1,
+        "longtitude": 15.0333
+    },
+    "Chile": {
+        "timezoneCode": "CL",
+        "latitude": -33.45,
+        "longtitude": -70.6667
+    },
+    "China": {
+        "timezoneCode": "CN",
+        "latitude": 39.9167,
+        "longtitude": 116.3833
+    },
+    "Christmas Island": {
+        "timezoneCode": "CX",
+        "latitude": -10.4167,
+        "longtitude": 105.7167
+    },
+    "Cocos Islands": {
+        "timezoneCode": "CC",
+        "latitude": -12.1667,
+        "longtitude": 96.8333
+    },
+    "Colombia": {
+        "timezoneCode": "CO",
+        "latitude": 4.6,
+        "longtitude": -74.0833
+    },
+    "Comoros": {
+        "timezoneCode": "KM",
+        "latitude": -11.7,
+        "longtitude": 43.2333
+    },
+    "Democratic Republic of the Congo": {
+        "timezoneCode": "CD",
+        "latitude": -4.3167,
+        "longtitude": 15.3
+    },
+    "Republic of Congo": {
+        "timezoneCode": "CG",
+        "latitude": -4.25,
+        "longtitude": 15.2833
+    },
+    "Cook Islands": {
+        "timezoneCode": "CK",
+        "latitude": -21.2,
+        "longtitude": -159.7667
+    },
+    "Costa Rica": {
+        "timezoneCode": "CR",
+        "latitude": 9.9333,
+        "longtitude": -84.0833
+    },
+    "Croatia": {
+        "timezoneCode": "HR",
+        "latitude": 45.8,
+        "longtitude": 16
+    },
+    "Cuba": {
+        "timezoneCode": "CU",
+        "latitude": 23.1167,
+        "longtitude": -82.35
+    },
+    "Curaçao": {
+        "timezoneCode": "CW",
+        "latitude": 12.1,
+        "longtitude": -68.9167
+    },
+    "Cyprus": {
+        "timezoneCode": "CY",
+        "latitude": 35.1667,
+        "longtitude": 33.3667
+    },
+    "Czech Republic": {
+        "timezoneCode": "CZ",
+        "latitude": 50.0833,
+        "longtitude": 14.4667
+    },
+    "Denmark": {
+        "timezoneCode": "DK",
+        "latitude": 55.6667,
+        "longtitude": 12.5833
+    },
+    "Djibouti": {
+        "timezoneCode": "DJ",
+        "latitude": 11.5833,
+        "longtitude": 43.15
+    },
+    "Dominica": {
+        "timezoneCode": "DM",
+        "latitude": 15.3,
+        "longtitude": -61.4
+    },
+    "Dominican Republic": {
+        "timezoneCode": "DO",
+        "latitude": 18.4667,
+        "longtitude": -69.9
+    },
+    "Ecuador": {
+        "timezoneCode": "EC",
+        "latitude": -0.2167,
+        "longtitude": -78.5
+    },
+    "Egypt": {
+        "timezoneCode": "EG",
+        "latitude": 30.05,
+        "longtitude": 31.25
+    },
+    "El Salvador": {
+        "timezoneCode": "SV",
+        "latitude": 13.7,
+        "longtitude": -89.2
+    },
+    "Equatorial Guinea": {
+        "timezoneCode": "GQ",
+        "latitude": 3.75,
+        "longtitude": 8.7833
+    },
+    "Eritrea": {
+        "timezoneCode": "ER",
+        "latitude": 15.3333,
+        "longtitude": 38.9333
+    },
+    "Estonia": {
+        "timezoneCode": "EE",
+        "latitude": 59.4333,
+        "longtitude": 24.7167
+    },
+    "Ethiopia": {
+        "timezoneCode": "ET",
+        "latitude": 9.0333,
+        "longtitude": 38.7
+    },
+    "Falkland Islands": {
+        "timezoneCode": "FK",
+        "latitude": -51.7,
+        "longtitude": -57.85
+    },
+    "Faroe Islands": {
+        "timezoneCode": "FO",
+        "latitude": 62,
+        "longtitude": -6.7667
+    },
+    "Fiji": {
+        "timezoneCode": "FJ",
+        "latitude": -18.1333,
+        "longtitude": 178.4167
+    },
+    "Finland": {
+        "timezoneCode": "FI",
+        "latitude": 60.1667,
+        "longtitude": 24.9333
+    },
+    "France": {
+        "timezoneCode": "FR",
+        "latitude": 48.8667,
+        "longtitude": 2.3333
+    },
+    "French Polynesia": {
+        "timezoneCode": "PF",
+        "latitude": -17.5333,
+        "longtitude": -149.5667
+    },
+    "Gabon": {
+        "timezoneCode": "GA",
+        "latitude": 0.3833,
+        "longtitude": 9.45
+    },
+    "The Gambia": {
+        "timezoneCode": "GM",
+        "latitude": 13.45,
+        "longtitude": -16.5667
+    },
+    "Georgia": {
+        "timezoneCode": "GE",
+        "latitude": 41.6833,
+        "longtitude": 44.8333
+    },
+    "Germany": {
+        "timezoneCode": "DE",
+        "latitude": 52.5167,
+        "longtitude": 13.4
+    },
+    "Ghana": {
+        "timezoneCode": "GH",
+        "latitude": 5.55,
+        "longtitude": -0.2167
+    },
+    "Gibraltar": {
+        "timezoneCode": "GI",
+        "latitude": 36.1333,
+        "longtitude": -5.35
+    },
+    "Greece": {
+        "timezoneCode": "GR",
+        "latitude": 37.9833,
+        "longtitude": 23.7333
+    },
+    "Greenland": {
+        "timezoneCode": "GL",
+        "latitude": 64.1833,
+        "longtitude": -51.75
+    },
+    "Grenada": {
+        "timezoneCode": "GD",
+        "latitude": 12.05,
+        "longtitude": -61.75
+    },
+    "Guam": {
+        "timezoneCode": "GU",
+        "latitude": 13.4667,
+        "longtitude": 144.7333
+    },
+    "Guatemala": {
+        "timezoneCode": "GT",
+        "latitude": 14.6167,
+        "longtitude": -90.5167
+    },
+    "Guernsey": {
+        "timezoneCode": "GG",
+        "latitude": 49.45,
+        "longtitude": -2.5333
+    },
+    "Guinea": {
+        "timezoneCode": "GN",
+        "latitude": 9.5,
+        "longtitude": -13.7
+    },
+    "Guinea-Bissau": {
+        "timezoneCode": "GW",
+        "latitude": 11.85,
+        "longtitude": -15.5833
+    },
+    "Guyana": {
+        "timezoneCode": "GY",
+        "latitude": 6.8,
+        "longtitude": -58.15
+    },
+    "Haiti": {
+        "timezoneCode": "HT",
+        "latitude": 18.5333,
+        "longtitude": -72.3333
+    },
+    "Vatican City": {
+        "timezoneCode": "VA",
+        "latitude": 41.9,
+        "longtitude": 12.45
+    },
+    "Honduras": {
+        "timezoneCode": "HN",
+        "latitude": 14.1,
+        "longtitude": -87.2167
+    },
+    "Hungary": {
+        "timezoneCode": "HU",
+        "latitude": 47.5,
+        "longtitude": 19.0833
+    },
+    "Iceland": {
+        "timezoneCode": "IS",
+        "latitude": 64.15,
+        "longtitude": -21.95
+    },
+    "India": {
+        "timezoneCode": "IN",
+        "latitude": 28.6,
+        "longtitude": 77.2
+    },
+    "Indonesia": {
+        "timezoneCode": "ID",
+        "latitude": -6.1667,
+        "longtitude": 106.8167
+    },
+    "Iran": {
+        "timezoneCode": "IR",
+        "latitude": 35.7,
+        "longtitude": 51.4167
+    },
+    "Iraq": {
+        "timezoneCode": "IQ",
+        "latitude": 33.3333,
+        "longtitude": 44.4
+    },
+    "Ireland": {
+        "timezoneCode": "IE",
+        "latitude": 53.3167,
+        "longtitude": -6.2333
+    },
+    "Isle of Man": {
+        "timezoneCode": "IM",
+        "latitude": 54.15,
+        "longtitude": -4.4833
+    },
+    "Israel": {
+        "timezoneCode": "IL",
+        "latitude": 31.7667,
+        "longtitude": 35.2333
+    },
+    "Italy": {
+        "timezoneCode": "IT",
+        "latitude": 41.9,
+        "longtitude": 12.4833
+    },
+    "Jamaica": {
+        "timezoneCode": "JM",
+        "latitude": 18,
+        "longtitude": -76.8
+    },
+    "Japan": {
+        "timezoneCode": "JP",
+        "latitude": 35.6833,
+        "longtitude": 139.75
+    },
+    "Jersey": {
+        "timezoneCode": "JE",
+        "latitude": 49.1833,
+        "longtitude": -2.1
+    },
+    "Jordan": {
+        "timezoneCode": "JO",
+        "latitude": 31.95,
+        "longtitude": 35.9333
+    },
+    "Kazakhstan": {
+        "timezoneCode": "KZ",
+        "latitude": 51.1667,
+        "longtitude": 71.4167
+    },
+    "Kenya": {
+        "timezoneCode": "KE",
+        "latitude": -1.2833,
+        "longtitude": 36.8167
+    },
+    "Kiribati": {
+        "timezoneCode": "KI",
+        "latitude": -0.8833,
+        "longtitude": 169.5333
+    },
+    "North Korea": {
+        "timezoneCode": "KP",
+        "latitude": 39.0167,
+        "longtitude": 125.75
+    },
+    "South Korea": {
+        "timezoneCode": "KR",
+        "latitude": 37.55,
+        "longtitude": 126.9833
+    },
+    "Kosovo": {
+        "timezoneCode": "KO",
+        "latitude": 42.6667,
+        "longtitude": 21.1667
+    },
+    "Kuwait": {
+        "timezoneCode": "KW",
+        "latitude": 29.3667,
+        "longtitude": 47.9667
+    },
+    "Kyrgyzstan": {
+        "timezoneCode": "KG",
+        "latitude": 42.8667,
+        "longtitude": 74.6
+    },
+    "Laos": {
+        "timezoneCode": "LA",
+        "latitude": 17.9667,
+        "longtitude": 102.6
+    },
+    "Latvia": {
+        "timezoneCode": "LV",
+        "latitude": 56.95,
+        "longtitude": 24.1
+    },
+    "Lebanon": {
+        "timezoneCode": "LB",
+        "latitude": 33.8667,
+        "longtitude": 35.5
+    },
+    "Lesotho": {
+        "timezoneCode": "LS",
+        "latitude": -29.3167,
+        "longtitude": 27.4833
+    },
+    "Liberia": {
+        "timezoneCode": "LR",
+        "latitude": 6.3,
+        "longtitude": -10.8
+    },
+    "Libya": {
+        "timezoneCode": "LY",
+        "latitude": 32.8833,
+        "longtitude": 13.1667
+    },
+    "Liechtenstein": {
+        "timezoneCode": "LI",
+        "latitude": 47.1333,
+        "longtitude": 9.5167
+    },
+    "Lithuania": {
+        "timezoneCode": "LT",
+        "latitude": 54.6833,
+        "longtitude": 25.3167
+    },
+    "Luxembourg": {
+        "timezoneCode": "LU",
+        "latitude": 49.6,
+        "longtitude": 6.1167
+    },
+    "Macedonia": {
+        "timezoneCode": "MK",
+        "latitude": 42,
+        "longtitude": 21.4333
+    },
+    "Madagascar": {
+        "timezoneCode": "MG",
+        "latitude": -18.9167,
+        "longtitude": 47.5167
+    },
+    "Malawi": {
+        "timezoneCode": "MW",
+        "latitude": -13.9667,
+        "longtitude": 33.7833
+    },
+    "Malaysia": {
+        "timezoneCode": "MY",
+        "latitude": 3.1667,
+        "longtitude": 101.7
+    },
+    "Maldives": {
+        "timezoneCode": "MV",
+        "latitude": 4.1667,
+        "longtitude": 73.5
+    },
+    "Mali": {
+        "timezoneCode": "ML",
+        "latitude": 12.65,
+        "longtitude": -8
+    },
+    "Malta": {
+        "timezoneCode": "MT",
+        "latitude": 35.8833,
+        "longtitude": 14.5
+    },
+    "Marshall Islands": {
+        "timezoneCode": "MH",
+        "latitude": 7.1,
+        "longtitude": 171.3833
+    },
+    "Mauritania": {
+        "timezoneCode": "MR",
+        "latitude": 18.0667,
+        "longtitude": -15.9667
+    },
+    "Mauritius": {
+        "timezoneCode": "MU",
+        "latitude": -20.15,
+        "longtitude": 57.4833
+    },
+    "Mexico": {
+        "timezoneCode": "MX",
+        "latitude": 19.4333,
+        "longtitude": -99.1333
+    },
+    "Federated States of Micronesia": {
+        "timezoneCode": "FM",
+        "latitude": 6.9167,
+        "longtitude": 158.15
+    },
+    "Moldova": {
+        "timezoneCode": "MD",
+        "latitude": 47,
+        "longtitude": 28.85
+    },
+    "Monaco": {
+        "timezoneCode": "MC",
+        "latitude": 43.7333,
+        "longtitude": 7.4167
+    },
+    "Mongolia": {
+        "timezoneCode": "MN",
+        "latitude": 47.9167,
+        "longtitude": 106.9167
+    },
+    "Montenegro": {
+        "timezoneCode": "ME",
+        "latitude": 42.4333,
+        "longtitude": 19.2667
+    },
+    "Montserrat": {
+        "timezoneCode": "MS",
+        "latitude": 16.7,
+        "longtitude": -62.2167
+    },
+    "Morocco": {
+        "timezoneCode": "MA",
+        "latitude": 34.0167,
+        "longtitude": -6.8167
+    },
+    "Mozambique": {
+        "timezoneCode": "MZ",
+        "latitude": -25.95,
+        "longtitude": 32.5833
+    },
+    "Namibia": {
+        "timezoneCode": "NA",
+        "latitude": -22.5667,
+        "longtitude": 17.0833
+    },
+    "Nepal": {
+        "timezoneCode": "NP",
+        "latitude": 27.7167,
+        "longtitude": 85.3167
+    },
+    "Netherlands": {
+        "timezoneCode": "NL",
+        "latitude": 52.35,
+        "longtitude": 4.9167
+    },
+    "New Caledonia": {
+        "timezoneCode": "NC",
+        "latitude": -22.2667,
+        "longtitude": 166.45
+    },
+    "New Zealand": {
+        "timezoneCode": "NZ",
+        "latitude": -41.3,
+        "longtitude": 174.7833
+    },
+    "Nicaragua": {
+        "timezoneCode": "NI",
+        "latitude": 12.1333,
+        "longtitude": -86.25
+    },
+    "Niger": {
+        "timezoneCode": "NE",
+        "latitude": 13.5167,
+        "longtitude": 2.1167
+    },
+    "Nigeria": {
+        "timezoneCode": "NG",
+        "latitude": 9.0833,
+        "longtitude": 7.5333
+    },
+    "Niue": {
+        "timezoneCode": "NU",
+        "latitude": -19.0167,
+        "longtitude": -169.9167
+    },
+    "Norfolk Island": {
+        "timezoneCode": "NF",
+        "latitude": -29.05,
+        "longtitude": 167.9667
+    },
+    "Northern Mariana Islands": {
+        "timezoneCode": "MP",
+        "latitude": 15.2,
+        "longtitude": 145.75
+    },
+    "Norway": {
+        "timezoneCode": "NO",
+        "latitude": 59.9167,
+        "longtitude": 10.75
+    },
+    "Oman": {
+        "timezoneCode": "OM",
+        "latitude": 23.6167,
+        "longtitude": 58.5833
+    },
+    "Pakistan": {
+        "timezoneCode": "PK",
+        "latitude": 33.6833,
+        "longtitude": 73.05
+    },
+    "Palau": {
+        "timezoneCode": "PW",
+        "latitude": 7.4833,
+        "longtitude": 134.6333
+    },
+    "Panama": {
+        "timezoneCode": "PA",
+        "latitude": 8.9667,
+        "longtitude": -79.5333
+    },
+    "Papua New Guinea": {
+        "timezoneCode": "PG",
+        "latitude": -9.45,
+        "longtitude": 147.1833
+    },
+    "Palestine": {
+        "timezoneCode": "PS",
+        "latitude": 31.7667,
+        "longtitude": 35.2333
+    },
+    "Paraguay": {
+        "timezoneCode": "PY",
+        "latitude": -25.2667,
+        "longtitude": -57.6667
+    },
+    "Peru": {
+        "timezoneCode": "PE",
+        "latitude": -12.05,
+        "longtitude": -77.05
+    },
+    "Philippines": {
+        "timezoneCode": "PH",
+        "latitude": 14.6,
+        "longtitude": 120.9667
+    },
+    "Pitcairn Islands": {
+        "timezoneCode": "PN",
+        "latitude": -25.0667,
+        "longtitude": -130.0833
+    },
+    "Poland": {
+        "timezoneCode": "PL",
+        "latitude": 52.25,
+        "longtitude": 21
+    },
+    "Portugal": {
+        "timezoneCode": "PT",
+        "latitude": 38.7167,
+        "longtitude": -9.1333
+    },
+    "Puerto Rico": {
+        "timezoneCode": "PR",
+        "latitude": 18.4667,
+        "longtitude": -66.1167
+    },
+    "Qatar": {
+        "timezoneCode": "QA",
+        "latitude": 25.2833,
+        "longtitude": 51.5333
+    },
+    "Romania": {
+        "timezoneCode": "RO",
+        "latitude": 44.4333,
+        "longtitude": 26.1
+    },
+    "Russia": {
+        "timezoneCode": "RU",
+        "latitude": 55.75,
+        "longtitude": 37.6
+    },
+    "Rwanda": {
+        "timezoneCode": "RW",
+        "latitude": -1.95,
+        "longtitude": 30.05
+    },
+    "Saint Barthelemy": {
+        "timezoneCode": "BL",
+        "latitude": 17.8833,
+        "longtitude": -62.85
+    },
+    "Saint Helena": {
+        "timezoneCode": "SH",
+        "latitude": -15.9333,
+        "longtitude": -5.7167
+    },
+    "Saint Kitts and Nevis": {
+        "timezoneCode": "KN",
+        "latitude": 17.3,
+        "longtitude": -62.7167
+    },
+    "Saint Lucia": {
+        "timezoneCode": "LC",
+        "latitude": 14,
+        "longtitude": -61
+    },
+    "Saint Pierre and Miquelon": {
+        "timezoneCode": "PM",
+        "latitude": 46.7667,
+        "longtitude": -56.1833
+    },
+    "Saint Vincent and the Grenadines": {
+        "timezoneCode": "VC",
+        "latitude": 13.1333,
+        "longtitude": -61.2167
+    },
+    "Samoa": {
+        "timezoneCode": "WS",
+        "latitude": -13.8167,
+        "longtitude": -171.7667
+    },
+    "San Marino": {
+        "timezoneCode": "SM",
+        "latitude": 43.9333,
+        "longtitude": 12.4167
+    },
+    "Sao Tome and Principe": {
+        "timezoneCode": "ST",
+        "latitude": 0.3333,
+        "longtitude": 6.7333
+    },
+    "Saudi Arabia": {
+        "timezoneCode": "SA",
+        "latitude": 24.65,
+        "longtitude": 46.7
+    },
+    "Senegal": {
+        "timezoneCode": "SN",
+        "latitude": 14.7333,
+        "longtitude": -17.6333
+    },
+    "Serbia": {
+        "timezoneCode": "RS",
+        "latitude": 44.8333,
+        "longtitude": 20.5
+    },
+    "Seychelles": {
+        "timezoneCode": "SC",
+        "latitude": -4.6167,
+        "longtitude": 55.45
+    },
+    "Sierra Leone": {
+        "timezoneCode": "SL",
+        "latitude": 8.4833,
+        "longtitude": -13.2333
+    },
+    "Singapore": {
+        "timezoneCode": "SG",
+        "latitude": 1.2833,
+        "longtitude": 103.85
+    },
+    "Sint Maarten": {
+        "timezoneCode": "SX",
+        "latitude": 18.0167,
+        "longtitude": -63.0333
+    },
+    "Slovakia": {
+        "timezoneCode": "SK",
+        "latitude": 48.15,
+        "longtitude": 17.1167
+    },
+    "Slovenia": {
+        "timezoneCode": "SI",
+        "latitude": 46.05,
+        "longtitude": 14.5167
+    },
+    "Solomon Islands": {
+        "timezoneCode": "SB",
+        "latitude": -9.4333,
+        "longtitude": 159.95
+    },
+    "Somalia": {
+        "timezoneCode": "SO",
+        "latitude": 2.0667,
+        "longtitude": 45.3333
+    },
+    "South Africa": {
+        "timezoneCode": "ZA",
+        "latitude": -25.7,
+        "longtitude": 28.2167
+    },
+    "South Sudan": {
+        "timezoneCode": "SS",
+        "latitude": 4.85,
+        "longtitude": 31.6167
+    },
+    "Spain": {
+        "timezoneCode": "ES",
+        "latitude": 40.4,
+        "longtitude": -3.6833
+    },
+    "Sri Lanka": {
+        "timezoneCode": "LK",
+        "latitude": 6.9167,
+        "longtitude": 79.8333
+    },
+    "Sudan": {
+        "timezoneCode": "SD",
+        "latitude": 15.6,
+        "longtitude": 32.5333
+    },
+    "Suriname": {
+        "timezoneCode": "SR",
+        "latitude": 5.8333,
+        "longtitude": -55.1667
+    },
+    "Svalbard": {
+        "timezoneCode": "SJ",
+        "latitude": 78.2167,
+        "longtitude": 15.6333
+    },
+    "Swaziland": {
+        "timezoneCode": "SZ",
+        "latitude": -26.3167,
+        "longtitude": 31.1333
+    },
+    "Sweden": {
+        "timezoneCode": "SE",
+        "latitude": 59.3333,
+        "longtitude": 18.05
+    },
+    "Switzerland": {
+        "timezoneCode": "CH",
+        "latitude": 46.9167,
+        "longtitude": 7.4667
+    },
+    "Syria": {
+        "timezoneCode": "SY",
+        "latitude": 33.5,
+        "longtitude": 36.3
+    },
+    "Taiwan": {
+        "timezoneCode": "TW",
+        "latitude": 25.0333,
+        "longtitude": 121.5167
+    },
+    "Tajikistan": {
+        "timezoneCode": "TJ",
+        "latitude": 38.55,
+        "longtitude": 68.7667
+    },
+    "Tanzania": {
+        "timezoneCode": "TZ",
+        "latitude": -6.8,
+        "longtitude": 39.2833
+    },
+    "Thailand": {
+        "timezoneCode": "TH",
+        "latitude": 13.75,
+        "longtitude": 100.5167
+    },
+    "Timor-Leste": {
+        "timezoneCode": "TL",
+        "latitude": -8.5833,
+        "longtitude": 125.6
+    },
+    "Togo": {
+        "timezoneCode": "TG",
+        "latitude": 6.1167,
+        "longtitude": 1.2167
+    },
+    "Tonga": {
+        "timezoneCode": "TO",
+        "latitude": -21.1333,
+        "longtitude": -175.2
+    },
+    "Tunisia": {
+        "timezoneCode": "TN",
+        "latitude": 36.8,
+        "longtitude": 10.1833
+    },
+    "Turkey": {
+        "timezoneCode": "TR",
+        "latitude": 39.9333,
+        "longtitude": 32.8667
+    },
+    "Turkmenistan": {
+        "timezoneCode": "TM",
+        "latitude": 37.95,
+        "longtitude": 58.3833
+    },
+    "Tuvalu": {
+        "timezoneCode": "TV",
+        "latitude": -8.5167,
+        "longtitude": 179.2167
+    },
+    "Uganda": {
+        "timezoneCode": "UG",
+        "latitude": 0.3167,
+        "longtitude": 32.55
+    },
+    "Ukraine": {
+        "timezoneCode": "UA",
+        "latitude": 50.4333,
+        "longtitude": 30.5167
+    },
+    "United Arab Emirates": {
+        "timezoneCode": "AE",
+        "latitude": 24.4667,
+        "longtitude": 54.3667
+    },
+    "United Kingdom": {
+        "timezoneCode": "GB",
+        "latitude": 51.5,
+        "longtitude": -0.0833
+    },
+    "United States": {
+        "timezoneCode": "US",
+        "latitude": 38.8833,
+        "longtitude": -77
+    },
+    "Uruguay": {
+        "timezoneCode": "UY",
+        "latitude": -34.85,
+        "longtitude": -56.1667
+    },
+    "Uzbekistan": {
+        "timezoneCode": "UZ",
+        "latitude": 41.3167,
+        "longtitude": 69.25
+    },
+    "Vanuatu": {
+        "timezoneCode": "VU",
+        "latitude": -17.7333,
+        "longtitude": 168.3167
+    },
+    "Venezuela": {
+        "timezoneCode": "VE",
+        "latitude": 10.4833,
+        "longtitude": -66.8667
+    },
+    "Vietnam": {
+        "timezoneCode": "VN",
+        "latitude": 21.0333,
+        "longtitude": 105.85
+    },
+    "US Virgin Islands": {
+        "timezoneCode": "VI",
+        "latitude": 18.35,
+        "longtitude": -64.9333
+    },
+    "Wallis and Futuna": {
+        "timezoneCode": "WF",
+        "latitude": -13.95,
+        "longtitude": -171.9333
+    },
+    "Yemen": {
+        "timezoneCode": "YE",
+        "latitude": 15.35,
+        "longtitude": 44.2
+    },
+    "Zambia": {
+        "timezoneCode": "ZM",
+        "latitude": -15.4167,
+        "longtitude": 28.2833
+    },
+    "Zimbabwe": {
+        "timezoneCode": "ZW",
+        "latitude": -17.8167,
+        "longtitude": 31.0333
+    },
+    "Hong Kong": {
+        "timezoneCode": "HK",
+        "latitude": 22.3193,
+        "longtitude": 114.1694
+    },
+    "Macau": {
+        "timezoneCode": "MO",
+        "latitude": 22.1987,
+        "longtitude": 113.5439
+    }
+}

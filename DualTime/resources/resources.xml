@@ -1,0 +1,6 @@
+<resources>
+    <jsonData id="locationData1" filename="data/location-data-1.json"/>
+    <jsonData id="locationData2" filename="data/location-data-2.json"/>
+    <jsonData id="locationData3" filename="data/location-data-3.json"/>
+    <jsonData id="locationNames" filename="data/location-names.json"/>
+</resources>

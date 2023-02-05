@@ -1,0 +1,7 @@
+<strings>
+    <string id="AppName">DualTime</string>
+    <string id="HomeTitle">Settings</string>
+    <string id="Prompt">Press Start</string>
+    <string id="MainMenuTitle">Main Menu</string>
+    <string id="primaryTimeStringHeightOffset">30</string>
+</strings>
