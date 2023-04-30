@@ -1074,11 +1074,36 @@
         "latitude": 51.5,
         "longtitude": -0.0833
     },
-    "United States": {
-        "timezoneCode": "US",
-        "latitude": 38.8833,
-        "longtitude": -77
-    },
+    "United States (Eastern Time)":{
+        "timezoneCode":"ET",
+        "latitude":38.8833,
+        "longtitude":-77
+     },
+     "United States (Central Time)":{
+        "timezoneCode":"CT",
+        "latitude":41.8781,
+        "longtitude":-87.6298
+     },
+     "United States (Mountain Time)":{
+        "timezoneCode":"MT",
+        "latitude":39.7420,
+        "longtitude":-104.9915
+     },
+     "United States (Pacific Time)":{
+        "timezoneCode":"PT",
+        "latitude":34.0522,
+        "longtitude":-118.2436
+     },
+     "United States (Hawaiian Time)":{
+        "timezoneCode":"HA",
+        "latitude":21.3156,
+        "longtitude":-157.8580
+     },
+     "United States (Alaskan Time)":{
+        "timezoneCode":"AL",
+        "latitude":61.2173,
+        "longtitude":-149.8631
+     },
     "Uruguay": {
         "timezoneCode": "UY",
         "latitude": -34.85,

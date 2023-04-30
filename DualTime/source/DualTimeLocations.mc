@@ -24,11 +24,11 @@ class Locations {
 
         } else if (id == 3) {
             // C
-            return locationNames.slice(32, 52);
+            return locationNames.slice(32, 53);
 
         } else if (id == 4) {
             // D
-            return locationNames.slice(52, 57);
+            return locationNames.slice(53, 57);
 
         } else if (id == 5) {
             // E
@@ -40,11 +40,11 @@ class Locations {
 
         } else if (id == 7) {
             // G
-            return locationNames.slice(71, 84);
+            return locationNames.slice(71, 85);
 
         } else if (id == 8) {
             // H
-            return locationNames.slice(84, 89);
+            return locationNames.slice(85, 89);
 
         } else if (id == 9) {
             // I
@@ -96,15 +96,15 @@ class Locations {
 
         } else if (id == 21) {
             // U
-            return locationNames.slice(212, 219);
+            return locationNames.slice(212, 225);
 
         } else if (id == 22) {
             // V
-            return locationNames.slice(219, 224);
+            return locationNames.slice(225, 229);
 
         } else if (id == 23) {
             // W
-            return locationNames.slice(224, 225);
+            return locationNames.slice(229, 230);
 
         } else if (id == 24) {
             // X
@@ -112,11 +112,11 @@ class Locations {
 
         } else if (id == 25) {
             // Y
-            return locationNames.slice(225, 226);
+            return locationNames.slice(230, 231);
 
         } else if (id == 26) {
             // Z
-            return [locationNames[226], locationNames[227]];
+            return [locationNames[231], locationNames[232]];
         }
         
         return [];
