@@ -74,7 +74,7 @@ class DualTimeSettingsAlphabeticalMenuDelegate extends WatchUi.Menu2InputDelegat
             // If the 'secondaryTimezone' option is selected, dynamically generate a
             // submenu that groups the available countries by letter.
             var customMenu = new WatchUi.CustomMenu(35, Graphics.COLOR_WHITE, {
-                :focusItemHeight=>45,
+                :focusItemHeight=>75,
                 :foreground=>new $.Rez.Drawables.MenuForeground(),
                 :title=>new TimezonesMenuTitle("Select"),
                 :footer=>new TimezonesMenuFooter()
@@ -132,7 +132,7 @@ class DualTimeSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
         // Dynamically generate a submenu with the available countries
         // that start with the selected letter.
         var customMenu = new WatchUi.CustomMenu(35, Graphics.COLOR_WHITE, {
-            :focusItemHeight=>45,
+            :focusItemHeight=>75,
             :foreground=>new $.Rez.Drawables.MenuForeground(),
             :title=>new TimezonesMenuTitle("Timezones"),
             :footer=>new TimezonesMenuFooter()
@@ -170,7 +170,7 @@ class TimezonesMenuDelegate extends WatchUi.Menu2InputDelegate {
         Menu2InputDelegate.initialize();
     }
 
-    public function onSelect(item as CustomItem) as Void {
+    public function onSelect(item as MenuItem) as Void {
         // If a timezone is selected, change the value in the storage and go back to the previous page
         var secondaryTimezone = item.getLabel();
 
@@ -246,7 +246,7 @@ class CustomItem extends WatchUi.CustomMenuItem {
 
     private var _label as String;
 
-    public function initialize(id as Symbol, text as String) {
+    public function initialize(id as Number, text as String) {
         CustomMenuItem.initialize(id, {});
         _label = text;
     }
@@ -254,7 +254,7 @@ class CustomItem extends WatchUi.CustomMenuItem {
     public function draw(dc as Dc) as Void {
         var font = Graphics.FONT_TINY;
         if (isFocused()) {
-            font = Graphics.FONT_SMALL;
+            font = Graphics.FONT_LARGE;
         }
 
         if (isSelected()) {
@@ -266,7 +266,17 @@ class CustomItem extends WatchUi.CustomMenuItem {
         dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2, font, _label, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.drawLine(0, 0, dc.getWidth(), 0);
+        if (isFocused()) {
+            dc.drawLine(0, 1, dc.getWidth(), 1);
+            dc.drawLine(0, 2, dc.getWidth(), 2);
+            dc.drawLine(0, 3, dc.getWidth(), 3);
+        }
         dc.drawLine(0, dc.getHeight() - 1, dc.getWidth(), dc.getHeight() - 1);
+        if (isFocused()) {
+            dc.drawLine(0, dc.getHeight() - 2, dc.getWidth(), dc.getHeight() - 2);
+            dc.drawLine(0, dc.getHeight() - 3, dc.getWidth(), dc.getHeight() - 3);
+            dc.drawLine(0, dc.getHeight() - 4, dc.getWidth(), dc.getHeight() - 4);
+        }
     }
 
     public function getLabel() as String {

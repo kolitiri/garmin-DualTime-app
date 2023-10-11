@@ -250,7 +250,6 @@ class DualTimeView extends WatchUi.WatchFace {
     function drawTimeDivider(dc, startingX, height) {
         var dividerUpperCornerX = startingX;
         var dividerUpperCornerY = heightScreen/2 - height/2;
-        var dividerLowerCornerY = dividerUpperCornerY + height;
 
         dc.setColor(Graphics.COLOR_DK_RED, Graphics.COLOR_DK_RED);
         dc.drawRectangle(dividerUpperCornerX, dividerUpperCornerY, timeDividerWidth, height);
@@ -278,7 +277,6 @@ class DualTimeView extends WatchUi.WatchFace {
 
         var primaryColor = foregroundColor;
         var lowBatteryColor = Graphics.COLOR_DK_RED;
-        var fullBatteryColor = Graphics.COLOR_DK_GREEN;
 
         var batteryIconPinX = startingX + batteryWidth;
         var batteryIconPinY = startingY + ((batteryIconHeight - batteryIconPinHeight) / 2);
