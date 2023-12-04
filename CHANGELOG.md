@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 04/12/2023
+Added optional setting to display seconds (only for round watches)
+Compiled with SDK 6.4.1
+
 ## [1.2.0] - 11/10/2023
 Increased visibility of selected items in the timezone menus
 
@@ -15,3 +19,4 @@ Added support for additional US timezones:
 
 ## [1.0.0] - 05/01/2023
 Initial release
+Compiled with SDK 4.1.5

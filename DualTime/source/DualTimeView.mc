@@ -1,6 +1,7 @@
 import Toybox.Application.Storage;
 import Toybox.Graphics;
 import Toybox.Lang;
+import Toybox.Math;
 import Toybox.Position;
 import Toybox.System;
 import Toybox.Time;
@@ -10,6 +11,11 @@ import Toybox.WatchUi;
 * Main view of the application.
 */
 class DualTimeView extends WatchUi.WatchFace {
+    private var partialUpdatesAllowed as Boolean;
+    private var fullScreenRefresh as Boolean;
+    private var isAwake as Boolean;
+    private var screenShape as ScreenShape;
+
     // Default variables
     var defaultTimezone = "United Kingdom";
     var defaultTimezoneCode = "GB";
@@ -24,6 +30,7 @@ class DualTimeView extends WatchUi.WatchFace {
     var secondaryTimezoneCode;
     var secondaryTimezoneLatitude;
     var secondaryTimezoneLongtitude;
+    var displaySeconds;
 
     // Color variables
     var backgroundColor;
@@ -51,6 +58,10 @@ class DualTimeView extends WatchUi.WatchFace {
 
     function initialize() {
         WatchFace.initialize();
+        screenShape = System.getDeviceSettings().screenShape;
+        partialUpdatesAllowed = (WatchUi.WatchFace has :onPartialUpdate);
+        fullScreenRefresh = true;
+        isAwake = true;
     }
 
     function onLayout(dc as Dc) as Void {
@@ -70,6 +81,13 @@ class DualTimeView extends WatchUi.WatchFace {
             foregroundColor = Graphics.COLOR_BLACK;
         }
 
+        // Get displaySeconds setting from storage (watch menu), only for round shaped watches
+        if (screenShape != System.SCREEN_SHAPE_RECTANGLE) {
+            displaySeconds = Storage.getValue("displaySeconds") ? true : false;
+        } else {
+            displaySeconds = false;
+        }
+
         is24Hour = System.getDeviceSettings().is24Hour;
 
         // Get secondaryTimezone settings from storage (watch menu)
@@ -87,7 +105,15 @@ class DualTimeView extends WatchUi.WatchFace {
         timezoneDiffSecs = getLocationTimeOffset(secondaryLocation);
     }
 
+    function onPartialUpdate(dc as Dc) as Void {
+        // Called every 1s while on Low Power Mode
+        drawSeconds(dc);
+    }
+
     function onUpdate(dc as Dc) as Void {
+        // We always want to refresh the full screen when we get a regular onUpdate call.
+        fullScreenRefresh = true;
+
         // Clear the screen before updating
         dc.setColor(Graphics.COLOR_TRANSPARENT, backgroundColor as Number);
         dc.clear();
@@ -153,6 +179,18 @@ class DualTimeView extends WatchUi.WatchFace {
             secondaryTimeStringHeight,
             secondaryTimeFont
         );
+
+        if (partialUpdatesAllowed) {
+            // If this device supports partial updates and they are currently
+            // allowed run the onPartialUpdate method to draw the seconds indicator.
+            onPartialUpdate(dc);
+        } else if (isAwake) {
+            // Otherwise, if we are out of sleep mode, draw the seconds indicator
+            // directly in the full update method.
+            drawSeconds(dc);
+        }
+
+        fullScreenRefresh = false;
     }
 
     /**
@@ -188,7 +226,8 @@ class DualTimeView extends WatchUi.WatchFace {
             // If build with SDK > 4.1.5, localMoment requires a Time.Gregorian.moment as a second argument.
             // However, when the app is running in the watch, localMoment requires a Number (when.value()).
             // For now, the only way to make both the simulator and the watch happy is to build with SDK 4.1.5.
-            var local = Time.Gregorian.localMoment(secondaryLocation, when.value());
+            // UPDATE: Seems like this has been fixed in SDK 6.4.1. Changing when.value() -> when
+            var local = Time.Gregorian.localMoment(secondaryLocation, when);
             // Difference in seconds from 00:00 UTC time (including daylight saving time offset)
             secsDiff = local.getOffset();
         } catch( ex ) {
@@ -242,6 +281,89 @@ class DualTimeView extends WatchUi.WatchFace {
     function drawTime(dc, timeString, startingX, startingY, height, font) {
         dc.setColor(foregroundColor, Graphics.COLOR_TRANSPARENT);
         dc.drawText(startingX, startingY, font, timeString, Graphics.TEXT_JUSTIFY_LEFT);
+    }
+
+    /**
+    * Draws the seconds indicator
+    *
+    * NOTE! As a side effect, this function can also draw the battery icon.
+    * This is due to the fact that depending on the position of the seconds
+    * indicator, we might also erase the battery, when we partially update
+    * the screen using the clip method.
+    */
+    function drawSeconds(dc) {
+
+        if (displaySeconds == false) {
+            return;
+        }
+
+        if (!isAwake) {
+            return;
+        }
+
+        var clockTime = System.getClockTime();
+        var seconds = clockTime.sec.format("%02d").toNumber();
+        var arcStart;
+        var x1;
+        var y1;
+
+        if (!fullScreenRefresh) {
+            // If this is a partial screen refresh, we need to clear the previous clipped
+            // area (drawn one second earlier) before we start drawing to the new one.
+            var prevSeconds = seconds - 1;
+            arcStart = 90 - (prevSeconds * 6);
+            x1 = widthScreen/2 + widthScreen/2 * Math.sin(Math.toRadians(arcStart + 90));
+            y1 = widthScreen/2 + widthScreen/2 * Math.cos(Math.toRadians(arcStart + 90));
+            dc.setClip(x1 - 10, y1 - 10, 20, 20);
+            dc.setColor(Graphics.COLOR_TRANSPARENT, backgroundColor as Number);
+            dc.clear();
+
+            if (prevSeconds < 4 || prevSeconds > 56) {
+                // If we are going to clear the area very close to the battery
+                // (12:00 +/- 4 seconds) we need to re-draw the battery icon
+                drawBattery(
+                    dc,
+                    widthScreen/2 - (batteryWidth+batteryPinWidth)/2,
+                    10
+                );
+            }
+        }
+
+        arcStart = 90 - (seconds * 6);
+        x1 = widthScreen/2 + widthScreen/2 * Math.sin(Math.toRadians(arcStart + 90));
+        y1 = widthScreen/2 + widthScreen/2 * Math.cos(Math.toRadians(arcStart + 90));
+
+        if (!fullScreenRefresh) {
+            dc.setClip(x1 - 10, y1 - 10, 20, 20);
+        }
+
+        dc.setColor(foregroundColor, Graphics.COLOR_TRANSPARENT);
+
+        // Draw a rectangle enclosing the area that will be partially updated (for debugging)
+        //dc.drawRectangle(x1 - 10, y1 - 10, 20, 20);
+
+        // Draw a number of tiny arches to create the illusion of a seconds indicator
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2, Graphics.ARC_COUNTER_CLOCKWISE, arcStart - 3, arcStart - 1);
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2, Graphics.ARC_COUNTER_CLOCKWISE, arcStart + 1, arcStart + 3);
+
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2 - 1, Graphics.ARC_COUNTER_CLOCKWISE, arcStart - 3, arcStart - 1);
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2 - 1, Graphics.ARC_COUNTER_CLOCKWISE, arcStart + 1, arcStart + 3);
+
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2 - 2, Graphics.ARC_COUNTER_CLOCKWISE, arcStart - 3, arcStart - 1);
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2 - 2, Graphics.ARC_COUNTER_CLOCKWISE, arcStart + 1, arcStart + 3);
+
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2 - 3, Graphics.ARC_COUNTER_CLOCKWISE, arcStart - 3, arcStart - 1);
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2 - 3, Graphics.ARC_COUNTER_CLOCKWISE, arcStart + 1, arcStart + 3);
+
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2 - 4, Graphics.ARC_COUNTER_CLOCKWISE, arcStart - 3, arcStart - 1);
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2 - 4, Graphics.ARC_COUNTER_CLOCKWISE, arcStart + 1, arcStart + 3);
+
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2 - 5, Graphics.ARC_COUNTER_CLOCKWISE, arcStart - 3, arcStart - 1);
+        dc.drawArc(widthScreen/2, widthScreen/2, widthScreen/2 - 5, Graphics.ARC_COUNTER_CLOCKWISE, arcStart + 1, arcStart + 3);
+
+        if (!fullScreenRefresh) {
+            dc.clearClip();
+        }
     }
 
     /**
@@ -309,5 +431,56 @@ class DualTimeView extends WatchUi.WatchFace {
         dc.setColor(foregroundColor, Graphics.COLOR_DK_RED);
         dc.drawLine(0, widthScreen/2, widthScreen, widthScreen/2);
         dc.drawLine(widthScreen/2, 0, widthScreen/2, heightScreen);
+    }
+
+    /**
+    * Called when the device re-enters sleep mode
+    */
+    public function onEnterSleep() as Void {
+        // Set the isAwake flag to let onUpdate know it should stop rendering the second hand
+        isAwake = false;
+        WatchUi.requestUpdate();
+    }
+
+    /**
+    * Called when the device exits sleep mode
+    */
+    public function onExitSleep() as Void {
+        // Set the isAwake flag to let onUpdate know it should render the second hand
+        isAwake = true;
+    }
+
+    /**
+    *  Turns off partial updates
+    */
+    public function turnPartialUpdatesOff() as Void {
+        partialUpdatesAllowed = false;
+    }
+}
+
+
+/**
+* View delegate that receives watch face events
+*/
+class DualTimeDelegate extends WatchUi.WatchFaceDelegate {
+    private var _view as DualTimeView;
+
+    public function initialize(view as DualTimeView) {
+        WatchFaceDelegate.initialize();
+        _view = view;
+    }
+
+    /**
+    * The onPowerBudgetExceeded callback is called by the system if the onPartialUpdate
+    * method exceeds the allowed power budget. If this occurs, the system will stop
+    * invoking onPartialUpdate each second, so we notify the view here to let the
+    * rendering methods know they should not be rendering a second hand.
+    *
+    * @param powerInfo Information about the power budget
+    */
+    public function onPowerBudgetExceeded(powerInfo as WatchFacePowerInfo) as Void {
+        // System.println("Average execution time: " + powerInfo.executionTimeAverage);
+        // System.println("Allowed execution time: " + powerInfo.executionTimeLimit);
+        _view.turnPartialUpdatesOff();
     }
 }
