@@ -1,6 +1,7 @@
 import Toybox.Application.Storage;
 import Toybox.Graphics;
 import Toybox.Lang;
+import Toybox.System;
 import Toybox.WatchUi;
 
 /**
@@ -27,8 +28,10 @@ class DualTimeSettingsView extends WatchUi.View {
 * When the onMenu() behavior is received, it pushes the initial settings menu.
 */
 class DualTimeSettingsDelegate extends WatchUi.BehaviorDelegate {
+    private var screenShape as ScreenShape;
 
     public function initialize() {
+        screenShape = System.getDeviceSettings().screenShape;
         BehaviorDelegate.initialize();
     }
 
@@ -39,12 +42,20 @@ class DualTimeSettingsDelegate extends WatchUi.BehaviorDelegate {
         // Generate the settings menu
         var menu = new WatchUi.Menu2({:title=>new TimezonesMenuTitle("Settings")});
 
+        // Add menu items
+        menu.addItem(new WatchUi.MenuItem("Secondary Timezone", null, "secondaryTimezone", {:alignment => WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_RIGHT}));
+
         // Get the current state of the negativeDisplay attribute from the storage
         var negativeDisplay = Storage.getValue("negativeDisplay") ? true : false;
 
-        // Add menu items
         menu.addItem(new WatchUi.ToggleMenuItem("Negative Display", null, "negativeDisplay", negativeDisplay, {:alignment => WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_RIGHT}));
-        menu.addItem(new WatchUi.MenuItem("Secondary Timezone", null, "secondaryTimezone", {:alignment => WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_RIGHT}));
+
+        // Only show seconds indicator in round shaped watches
+        if (screenShape != System.SCREEN_SHAPE_RECTANGLE) {
+            // Get the current state of the displaySeconds attribute from the storage
+            var displaySeconds = Storage.getValue("displaySeconds") ? true : false;
+            menu.addItem(new WatchUi.ToggleMenuItem("Display Seconds", null, "displaySeconds", displaySeconds, {:alignment => WatchUi.MenuItem.MENU_ITEM_LABEL_ALIGN_RIGHT}));
+        }
 
         // Push the settings view
         WatchUi.pushView(menu, new DualTimeSettingsAlphabeticalMenuDelegate(), WatchUi.SLIDE_UP);
@@ -69,6 +80,11 @@ class DualTimeSettingsAlphabeticalMenuDelegate extends WatchUi.Menu2InputDelegat
             // If the 'negativeDisplay' toggle is flipped, change the value in the storage
             var negativeDisplay = Storage.getValue("negativeDisplay") ? false : true;
             Storage.setValue(id as Number, negativeDisplay);
+
+        } else if (id.equals("displaySeconds")) {
+            // If the 'displaySeconds' toggle is flipped, change the value in the storage
+            var displaySeconds = Storage.getValue("displaySeconds") ? false : true;
+            Storage.setValue(id as Number, displaySeconds);
 
         } else if (id.equals("secondaryTimezone")) {
             // If the 'secondaryTimezone' option is selected, dynamically generate a

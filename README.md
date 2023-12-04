@@ -9,7 +9,8 @@ Features:
 2. Reliable world time for over 200 countries, by leveraging Garmin's internal LocalMoment library
 3. In device settings that do not require the use of the Garmin Connect application
 4. Positive and negative display mode
-5. Simplistic design inspired by Garmin Fenix6's battery saver mode
+5. Optional setting to display seconds (only for round watches)
+6. Simplistic design inspired by Garmin Fenix6's battery saver mode
 
 ### Installation
 
@@ -29,7 +30,9 @@ Please note, this has only been tested on a real Fenix6 Pro device. The rest of 
 
 ### Notes
 
-Uses Time.localMoment [since API Level 3.3.0]
+* Uses Time.localMoment [since API Level 3.3.0]
+* Type checking is currently deactivated in monkey.jungle
+
 
 ### Authors
 
