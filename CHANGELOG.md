@@ -3,12 +3,14 @@ All notable changes to this project will be documented in this file.
 
 ## [1.4.0] - 28/01/2024
 Added support for additional Canadian timezones:
-* United States (Eastern Time)
-* United States (Central Time)
-* United States (Mountain Time)
-* United States (Pacific Time)
-* United States (Atlantic Time)
-* United States (Newfoundland Time)
+* Canada (Pacific Time)
+* Canada (Pacific Time - Whitehorse)
+* Canada (Mountain Time - Edmonton)
+* Canada (Mountain Time - Regina)
+* Canada (Central Time - Winnipeg)
+* Canada (Eastern Time)
+* Canada (Atlantic Time)
+* Canada (Newoundland Time)
 
 Fixed bug in country codes order that was causing the selection of wrong timezones
 
