@@ -24,87 +24,87 @@ class Locations {
 
         } else if (id == 3) {
             // C
-            return locationNames.slice(32, 53);
+            return locationNames.slice(32, 61);
 
         } else if (id == 4) {
             // D
-            return locationNames.slice(53, 57);
+            return locationNames.slice(61, 65);
 
         } else if (id == 5) {
             // E
-            return locationNames.slice(57, 64);
+            return locationNames.slice(65, 72);
 
         } else if (id == 6) {
             // F
-            return locationNames.slice(64, 71);
+            return locationNames.slice(72, 78);
 
         } else if (id == 7) {
             // G
-            return locationNames.slice(71, 85);
+            return locationNames.slice(78, 93);
 
         } else if (id == 8) {
             // H
-            return locationNames.slice(85, 89);
+            return locationNames.slice(93, 97);
 
         } else if (id == 9) {
             // I
-            return locationNames.slice(89, 98);
+            return locationNames.slice(97, 106);
 
         } else if (id == 10) {
             // J
-            return locationNames.slice(98, 102);
+            return locationNames.slice(106, 110);
 
         } else if (id == 11) {
             // K
-            return locationNames.slice(102, 108);
+            return locationNames.slice(110, 118);
 
         } else if (id == 12) {
             // L
-            return locationNames.slice(108, 117);
+            return locationNames.slice(118, 127);
 
         } else if (id == 13) {
             // M
-            return locationNames.slice(117, 137);
+            return locationNames.slice(127, 148);
 
         } else if (id == 14) {
             // N
-            return locationNames.slice(137, 150);
+            return locationNames.slice(148, 160);
 
         } else if (id == 15) {
             // O
-            return locationNames.slice(150, 151);
+            return locationNames.slice(160, 161);
 
         } else if (id == 16) {
             // P
-            return locationNames.slice(151, 163);
+            return locationNames.slice(161, 173);
 
         } else if (id == 17) {
             // Q
-            return locationNames.slice(163, 164);
+            return locationNames.slice(173, 174);
 
         } else if (id == 18) {
             // R
-            return locationNames.slice(164, 168);
+            return locationNames.slice(174, 177);
 
         } else if (id == 19) {
             // S
-            return locationNames.slice(168, 200);
+            return locationNames.slice(177, 208);
 
         } else if (id == 20) {
             // T
-            return locationNames.slice(200, 212);
+            return locationNames.slice(208, 219);
 
         } else if (id == 21) {
             // U
-            return locationNames.slice(212, 225);
+            return locationNames.slice(219, 231);
 
         } else if (id == 22) {
             // V
-            return locationNames.slice(225, 229);
+            return locationNames.slice(231, 236);
 
         } else if (id == 23) {
             // W
-            return locationNames.slice(229, 230);
+            return locationNames.slice(236, 237);
 
         } else if (id == 24) {
             // X
@@ -112,11 +112,11 @@ class Locations {
 
         } else if (id == 25) {
             // Y
-            return locationNames.slice(230, 231);
+            return locationNames.slice(237, 238);
 
         } else if (id == 26) {
             // Z
-            return [locationNames[231], locationNames[232]];
+            return [locationNames[238], locationNames[239]];
         }
         
         return [];

@@ -226,8 +226,7 @@ class DualTimeView extends WatchUi.WatchFace {
             // If build with SDK > 4.1.5, localMoment requires a Time.Gregorian.moment as a second argument.
             // However, when the app is running in the watch, localMoment requires a Number (when.value()).
             // For now, the only way to make both the simulator and the watch happy is to build with SDK 4.1.5.
-            // UPDATE: Seems like this has been fixed in SDK 6.4.1. Changing when.value() -> when
-            var local = Time.Gregorian.localMoment(secondaryLocation, when);
+            var local = Time.Gregorian.localMoment(secondaryLocation, when.value());
             // Difference in seconds from 00:00 UTC time (including daylight saving time offset)
             secsDiff = local.getOffset();
         } catch( ex ) {

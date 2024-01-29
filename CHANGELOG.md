@@ -1,6 +1,19 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.4.0] - 28/01/2024
+Added support for additional Canadian timezones:
+* Canada (Pacific Time)
+* Canada (Pacific Time - Whitehorse)
+* Canada (Mountain Time - Edmonton)
+* Canada (Mountain Time - Regina)
+* Canada (Central Time - Winnipeg)
+* Canada (Eastern Time)
+* Canada (Atlantic Time)
+* Canada (Newoundland Time)
+
+Fixed bug in country codes order that was causing the selection of wrong timezones
+
 ## [1.3.0] - 04/12/2023
 Added optional setting to display seconds (only for round watches)
 Compiled with SDK 6.4.1
