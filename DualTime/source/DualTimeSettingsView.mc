@@ -273,6 +273,10 @@ class CustomItem extends WatchUi.CustomMenuItem {
             font = Graphics.FONT_LARGE;
         }
 
+        if (_label.length() >= 25) {
+            font = Graphics.FONT_XTINY;
+        }
+
         if (isSelected()) {
             dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_BLUE);
             dc.clear();

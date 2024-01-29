@@ -152,12 +152,7 @@
     "Burkina Faso": {
         "timezoneCode": "BF",
         "latitude": 12.3667,
-        "longtitude": -1.5167
-    },
-    "Myanmar": {
-        "timezoneCode": "MM",
-        "latitude": 16.8,
-        "longtitude": 96.15
+        "longtitude": 0.91
     },
     "Burundi": {
         "timezoneCode": "BI",
@@ -174,10 +169,45 @@
         "latitude": 3.8667,
         "longtitude": 11.5167
     },
-    "Canada": {
-        "timezoneCode": "CA",
-        "latitude": 45.4167,
-        "longtitude": -75.7
+    "Canada (Pacific Time)": {
+        "timezoneCode": "PT",
+        "latitude": 48.4284,
+        "longtitude": -123.3656
+    },
+    "Canada (Pacific Time - Whitehorse)": {
+        "timezoneCode": "MT",
+        "latitude": 60.7197,
+        "longtitude": -135.0523
+    },
+    "Canada (Mountain Time - Edmonton)": {
+        "timezoneCode": "MT",
+        "latitude": 53.5461,
+        "longtitude": -113.4937
+    },
+    "Canada (Mountain Time - Regina)": {
+        "timezoneCode": "CT",
+        "latitude": 50.4452,
+        "longtitude": -104.6189
+    },
+    "Canada (Central Time - Winnipeg)": {
+        "timezoneCode": "CT",
+        "latitude": 49.8954,
+        "longtitude": -97.1385
+    },
+    "Canada (Eastern Time)": {
+        "timezoneCode": "ET",
+        "latitude": 43.6532,
+        "longtitude": -79.3832
+    },
+    "Canada (Atlantic Time)": {
+        "timezoneCode": "AT",
+        "latitude": 44.6476,
+        "longtitude": -63.5728
+    },
+    "Canada (Newoundland Time)": {
+        "timezoneCode": "NT",
+        "latitude": 47.5556,
+        "longtitude": -52.7453
     },
     "Cape Verde": {
         "timezoneCode": "CV",
@@ -229,7 +259,7 @@
         "latitude": -11.7,
         "longtitude": 43.2333
     },
-    "Democratic Republic of the Congo": {
+    "Congo (DCR)": {
         "timezoneCode": "CD",
         "latitude": -4.3167,
         "longtitude": 15.3
@@ -336,8 +366,8 @@
     },
     "Faroe Islands": {
         "timezoneCode": "FO",
-        "latitude": 62,
-        "longtitude": -6.7667
+        "latitude": 61.8926,
+        "longtitude": 6.9118
     },
     "Fiji": {
         "timezoneCode": "FJ",
@@ -366,8 +396,8 @@
     },
     "The Gambia": {
         "timezoneCode": "GM",
-        "latitude": 13.45,
-        "longtitude": -16.5667
+        "latitude": 13.4432,
+        "longtitude": 15.3101
     },
     "Georgia": {
         "timezoneCode": "GE",
@@ -381,13 +411,13 @@
     },
     "Ghana": {
         "timezoneCode": "GH",
-        "latitude": 5.55,
-        "longtitude": -0.2167
+        "latitude": 7.9465,
+        "longtitude": 1.0232
     },
     "Gibraltar": {
         "timezoneCode": "GI",
         "latitude": 36.1333,
-        "longtitude": -5.35
+        "longtitude": 5.35
     },
     "Greece": {
         "timezoneCode": "GR",
@@ -439,15 +469,15 @@
         "latitude": 18.5333,
         "longtitude": -72.3333
     },
-    "Vatican City": {
-        "timezoneCode": "VA",
-        "latitude": 41.9,
-        "longtitude": 12.45
-    },
     "Honduras": {
         "timezoneCode": "HN",
         "latitude": 14.1,
         "longtitude": -87.2167
+    },
+    "Hong Kong": {
+        "timezoneCode": "HK",
+        "latitude": 22.3193,
+        "longtitude": 114.1694
     },
     "Hungary": {
         "timezoneCode": "HU",
@@ -604,6 +634,11 @@
         "latitude": 49.6,
         "longtitude": 6.1167
     },
+    "Macau": {
+        "timezoneCode": "MO",
+        "latitude": 22.1987,
+        "longtitude": 113.5439
+    },
     "Macedonia": {
         "timezoneCode": "MK",
         "latitude": 42,
@@ -698,6 +733,11 @@
         "timezoneCode": "MZ",
         "latitude": -25.95,
         "longtitude": 32.5833
+    },
+    "Myanmar": {
+        "timezoneCode": "MM",
+        "latitude": 16.8,
+        "longtitude": 96.15
     },
     "Namibia": {
         "timezoneCode": "NA",
@@ -1071,39 +1111,39 @@
     },
     "United Kingdom": {
         "timezoneCode": "GB",
-        "latitude": 51.5,
-        "longtitude": -0.0833
+        "latitude": 51.5072,
+        "longtitude": 0.1276
     },
-    "United States (Eastern Time)":{
-        "timezoneCode":"ET",
-        "latitude":38.8833,
-        "longtitude":-77
-     },
-     "United States (Central Time)":{
-        "timezoneCode":"CT",
-        "latitude":41.8781,
-        "longtitude":-87.6298
-     },
-     "United States (Mountain Time)":{
-        "timezoneCode":"MT",
-        "latitude":39.7420,
-        "longtitude":-104.9915
-     },
-     "United States (Pacific Time)":{
-        "timezoneCode":"PT",
-        "latitude":34.0522,
-        "longtitude":-118.2436
-     },
-     "United States (Hawaiian Time)":{
-        "timezoneCode":"HA",
-        "latitude":21.3156,
-        "longtitude":-157.8580
-     },
-     "United States (Alaskan Time)":{
-        "timezoneCode":"AL",
-        "latitude":61.2173,
-        "longtitude":-149.8631
-     },
+    "United States (Eastern Time)": {
+        "timezoneCode": "ET",
+        "latitude": 38.8833,
+        "longtitude": -77
+    },
+    "United States (Central Time)": {
+        "timezoneCode": "CT",
+        "latitude": 41.8781,
+        "longtitude": -87.6298
+    },
+    "United States (Mountain Time)": {
+        "timezoneCode": "MT",
+        "latitude": 39.742,
+        "longtitude": -104.9915
+    },
+    "United States (Pacific Time)": {
+        "timezoneCode": "PT",
+        "latitude": 34.0522,
+        "longtitude": -118.2436
+    },
+    "United States (Hawaiian Time)": {
+        "timezoneCode": "HA",
+        "latitude": 21.3156,
+        "longtitude": -157.858
+    },
+    "United States (Alaskan Time)": {
+        "timezoneCode": "AL",
+        "latitude": 61.2173,
+        "longtitude": -149.8631
+    },
     "Uruguay": {
         "timezoneCode": "UY",
         "latitude": -34.85,
@@ -1118,6 +1158,11 @@
         "timezoneCode": "VU",
         "latitude": -17.7333,
         "longtitude": 168.3167
+    },
+    "Vatican City": {
+        "timezoneCode": "VA",
+        "latitude": 41.9,
+        "longtitude": 12.45
     },
     "Venezuela": {
         "timezoneCode": "VE",
@@ -1153,15 +1198,5 @@
         "timezoneCode": "ZW",
         "latitude": -17.8167,
         "longtitude": 31.0333
-    },
-    "Hong Kong": {
-        "timezoneCode": "HK",
-        "latitude": 22.3193,
-        "longtitude": 114.1694
-    },
-    "Macau": {
-        "timezoneCode": "MO",
-        "latitude": 22.1987,
-        "longtitude": 113.5439
     }
 }
